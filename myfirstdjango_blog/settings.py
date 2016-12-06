@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'article',
 ]
+
+from django.conf import global_settings
+BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
