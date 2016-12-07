@@ -45,7 +45,7 @@ from django.conf import global_settings
 BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
 
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
-TEMPLATE_DTRS = (
+TEMPLATE_DIRS = (
     TEMPLATE_PATH,
 )
 
