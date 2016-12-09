@@ -18,11 +18,7 @@ from django.contrib import admin
 # from article import views as my_views
 
 urlpatterns = [
-    url(r'^$', include('article.urls')),
-    # url(r'^detail/', include('article.urls')),
-    url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
-    # url(r'^article/(?P<my_args>\d+)/$', views.detail),
-    # url(r'^(?P<my_args>\d+)/$', my_views.detail, name='detail'),
-    # url(r'^test/$', my_views.test, name='test'),
+    url(r'^', include('article.urls')),
+    url(r'^(?P<article_id>\d+)/', include('article.urls')),
 ]
